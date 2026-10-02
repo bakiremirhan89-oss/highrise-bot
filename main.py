@@ -311,7 +311,7 @@ class Bot(BaseBot):
 
 # Calistirma
 if __name__ == "__main__":
-    threading.Thread(target=run_flask, daemon=True).start()
+    threading.Thread(target=run_flask, daemon=False).start()
     from highrise.__main__ import BotDefinition
     ROOM_ID = os.getenv("ROOM_ID", "6ab95573b2ca25fa545f08d3")
     TOKEN = os.getenv("BOT_TOKEN", "c7659afef1ef226636c556580a7c296809ce708d64979038ca14e391e4bb54c9")
